@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} /*Reset css*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+} /** 10px = 1rem **/
+
+
+/** CSS del Nav **/
+header {
+    height: 8rem;
+    position: relative;
+    background: #585d65;
+    border-radius: 5rem;
+    margin: 2rem 0;
+}
+
+@media (max-width:480px) {
+    header {
+        grid-area: header;
+    }
+}
+
+.logo {
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ulnav {
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    font-size: large;
+    right: 40rem;
+}
+
+.ulnav__li {
+    display: inline-block;
+    margin: 2.5rem;
+
+}
+
+.navLink:hover {
+    font-weight: bolder;
+    color: aqua;
+}
+
+.navLink {
+    font-weight: bold;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+/** body css **/
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    background-color: #9f8b9f;
+    background-image: linear-gradient(0deg, #9f8b9f 0%, #032325 100%);
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+@media (max-width:480px){
+    body {
+        max-width: 100%;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.5fr 2.2fr 0.3fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header"
+        "mainContent"
+        "footer"; 
+    }
+}
+
+@media (max-width:480px) {
+    .mainContent {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "textoIntro textoIntro"
+        "textoIntro textoIntro"
+        "tabla topJuegos"; 
+        grid-area: mainContent; 
+    }
+}
+
+.bodypages {
+    color: white;
+    background-size: cover;
+    font-size: 1.6rem;
+}
+
+h1 {
+    max-width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 10rem;
+    text-align: center;
+}
+
+.subtituloIndex {
+    max-width: 100%;
+    margin: 2rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 480px){
+    .textoIntro {
+        grid-area: textoIntro;
+    }
+}
+
+/** css del index.html **/
+
+.top {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 15rem;
+    width: 13rem;
+}
+
+@media (max-width: 480px) {
+    .top {
+        grid-area: topJuegos;
+    }
+}
+
+.top li {
+    padding: .6rem;
+} /** css de la ol del index **/
+
+.h3intro {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+} /** h3 del index **/
+
+.pintro {
+    padding: 1%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    height: 15rem;
+    width: 90rem;
+} /** parrafos del index **/
+
+.sectionTabla {
+    max-width: 100%;
+    margin: 2rem 36%;
+}
+
+@media (max-width: 480px) {
+    .sectionTabla {
+        grid-area: tabla;
+    }
+}
+
+.tabla {
+    background-color: black;
+}
+
+.tabla th {
+    padding: 2rem 1rem;
+}
+
+.tabla td {
+    padding: 2rem;
+}
+
+/** fin del css del index **/
+
+
+/** css del footer **/
+footer {
+    height: 8rem;
+    position: absolute;
+    background: #585d65;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    footer {
+        position: static;
+        grid-area: footer;
+        display: flex;
+        align-content: flex-end;
+    }
+}
+
+.footerLogo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footerP1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footerP2 {
+    text-align: center;
+}
+
+/** fin del css del footer **/
+
+.neon-light {
+    border:solid #354a97;
+    border-radius: 3rem;
+    box-shadow:inset #4359ac  0px 0px 25px,#4359ac  0px 10px 25px;
+    text-shadow:#6fa2f3 0px 0px 9px;
+    padding: 0.4em 1.2em;
+} /** css reusable de un tipo de borde **/
+
+.form {
+    background-color: rgba(20, 19, 19, 0.445);
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 400px;
+    border-radius: 1.5rem;
+    padding: 3.5rem 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.form__input {
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+
+.textarea {
+    resize: none;
+    margin-bottom: .5rem;
+}
+
+.botones {
+    background-color: #6fa2f3;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 300;
+    width: 8rem;
+    margin-left: 8rem;
+    cursor: pointer;
+}
+
+.ulCategorias {
+    margin: auto;
+    text-align: center;
+    background-color: #585d65;
+    border-radius: 3rem;
+    width: 50rem;
+}
+
+.divImg {
+    display: inline-block;
+    padding: 1rem;
+    background-color: black;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 2rem;
+    margin-left: 2.5rem;
+}
+
+.imgJuego {
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    margin-left: 4rem;
+}
+
+.botonesJuegos {
+    background-color: #6fa2f3;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 300;
+    width: 8rem;
+    margin-left: 11rem;
+    cursor: pointer;
+}
+
+.bodyJuegos {
+    color: white;
+    background-color: #9f8b9f;
+    background-image: linear-gradient(0deg, #9f8b9f 0%, #032325 100%);
+    font-size: medium;
+    background-size: contain;
+}
+
+#topjuegos {
+    width: 56rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.divImgcarrito {
+    display: inline-block;
+    background-color: black;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 2rem;
+    margin-left: 2.5rem;
+}
+
+#articulo {
+    background-color: rgba(240, 248, 255, 0.233);
+    position: relative;
+    bottom: 2rem;
+    height: 45rem;
+    border-radius: 3rem;
+}
+
+.pcarrito {
+    position: absolute;
+    right: 5rem;
+    padding: 1%;
+    border-radius: 1rem;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    font-weight: bold;
+    margin-bottom: 10rem;
+    height: 20rem;
+    width: 50rem;
+} /** parrafos de productos **/
+
+.botonesCarrito {
+    font-size: medium;
+    background-color: #6fa2f3;
+    border: none;
+    border-radius: .5rem;
+    font-weight: 400;
+    width: 10rem;
+    height: 5rem;
+    margin-left: 15rem;
+    cursor: pointer;
+}
