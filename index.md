@@ -1,12 +1,14 @@
-## Welcome to GitHub Pages
+## Bienvenido al Preview de mi Proyecto (en progreso..)
 
-You can use the [editor on GitHub](https://github.com/AlexisCollaso/Proyecto-AlexisCollaso/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Editar la Preview: [editor on GitHub](https://github.com/AlexisCollaso/Proyecto-AlexisCollaso/edit/gh-pages/index.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+GitHub Pages ejecutará: [Jekyll](https://jekyllrb.com/) para reconstruir las páginas de este sitio, a partir del contenido de archivos markdown.
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown es una sintaxis ligera y fácil de usar para diseñar su escritura. Incluye convenios como los siguientes
+
+
 
 ```markdown
 Syntax highlighted code block
@@ -26,12 +28,8 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Para mas detalles ver: [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+### Soporte y Contacto
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AlexisCollaso/Proyecto-AlexisCollaso/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+¿Tienes problemas con Pages? Echa un vistazo a la [documentacion](https://docs.github.com/categories/github-pages-basics/) o [contacta a soporte](https://support.github.com/contact)
