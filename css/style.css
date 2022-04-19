@@ -10,6 +10,18 @@
     background-size: cover;
 }
 
+.roster {
+    margin: 2rem 0;
+}
+
+.spg2 {
+    color: rgb(225, 11, 11);
+}
+
+.backblack {
+    background-color: #000;
+}
+
 .whiteText {
     color: #fff;
     margin: 2rem 0;
