@@ -65,3 +65,25 @@ body,
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
+
+footer .fB {
+    background-color: #3b5998;
+}
+
+footer .tW {
+    background-color: #55acee;
+}
+
+footer .iG {
+    background-color: #ac2bac;
+}
+
+.p-3 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#hr {
+    background-color: rgb(225, 11, 11);
+    height: 1rem;
+    width: 100%;
+}
