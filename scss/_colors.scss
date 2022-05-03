@@ -3,7 +3,7 @@
 }
 
 .backblack {
-    background-color: #000;
+    @include background(#000);
 }
 
 .whiteText {
@@ -16,27 +16,37 @@
 }
 
 .pintro {
-    background-color: #000;
+    @include background(#000);
 }
 
-footer {
-    .fB {
-        background-color: #3b5998;
+$redes: ( /*Declaracion del mapa*/
+    twitter: #55acee,
+    facebook:  #3b5998,
+    instagram: #ac2bac
+); 
+
+/*bucle para usar los valores del mapa*/
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
     }
+}
+
+
+.p-3 {
+    @include background(rgba(0, 0, 0, 0.7));
 }
 
 footer {
     .tW {
-        background-color: #55acee;
+        @include background(#55acee);
     }
-}
-
-footer {
+    
+    .fB {
+        @include background(#3b5998);
+    }
+    
     .iG {
-        background-color: #ac2bac;
+        @include background(#ac2bac);
     }
-}
-
-.p-3 {
-    background-color: rgba(0, 0, 0, 0.7);
 }
